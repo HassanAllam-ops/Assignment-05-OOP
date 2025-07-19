@@ -1,4 +1,6 @@
-﻿namespace Assignment_05_OOP
+﻿using System.Collections.Generic;
+namespace Assignment_05_OOP
+
 {
     #region Q1
     //public interface IShape
@@ -49,6 +51,37 @@
     //}
 
     #endregion
+
+    #region Q2
+    //public interface IAuthenticationService
+    //{
+    //    bool AuthenticateUser(string username, string password);
+    //    bool AuthorizeUser(string username, string role);
+    //}
+    //
+    //// i use dictoinary her 
+    // public class BasicAuthenticationService : IAuthenticationService
+    //{
+    //    private Dictionary<string, (string Password, List<string> Roles)> users =
+    //        new Dictionary<string, (string, List<string>)>
+    //    {
+    //           { "alice", ("12345", new List<string> { "admin", "user" }) },
+    //           { "bob", ("abcde", new List<string> { "user" }) }
+    //    };
+    //
+    //    // to chek if user name and password are correct it will return true else it will return false
+    //    public bool AuthenticateUser(string username, string password)
+    //    {
+    //        return users.ContainsKey(username) && users[username].Password == password;
+    //    }
+    //
+    //    // to chek if user name and role are correct it will return true else it will return false
+    //    public bool AuthorizeUser(string username, string role)
+    //    {
+    //        return users.ContainsKey(username) && users[username].Roles.Contains(role);
+    //    }
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -59,6 +92,21 @@
             //
             //circle.DisplayShapeInfo();
             //rectangle.DisplayShapeInfo();
+
+            #endregion
+
+            #region Implement Q2
+           // IAuthenticationService authService = new BasicAuthenticationService();
+           //
+           // string username = "alice";
+           // string password = "12345";
+           // string role = "admin";
+           //
+           // bool isAuthenticated = authService.AuthenticateUser(username, password);
+           // bool isAuthorized = authService.AuthorizeUser(username, role);
+           //
+           // Console.WriteLine($"Authenticated: {isAuthenticated}");
+           // Console.WriteLine($"Authorized as '{role}': {isAuthorized}");
 
             #endregion
         }
