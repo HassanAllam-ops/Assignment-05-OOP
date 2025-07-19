@@ -82,6 +82,37 @@ namespace Assignment_05_OOP
     //    }
     //}
     #endregion
+
+    #region Q3
+   // public interface INotificationService
+   // {
+   //     void SendNotification(string recipient, string message);
+   // }
+   //
+   // public class EmailNotificationService : INotificationService
+   // {
+   //     public void SendNotification(string recipient, string message)
+   //     {
+   //         Console.WriteLine($"📧 Email sent to {recipient}: {message}");
+   //     }
+   // }
+   //
+   // public class SmsNotificationService : INotificationService
+   // {
+   //     public void SendNotification(string recipient, string message)
+   //     {
+   //         Console.WriteLine($"📲 SMS sent to {recipient}: {message}");
+   //     }
+   // }
+   //
+   // public class PushNotificationService : INotificationService
+   // {
+   //     public void SendNotification(string recipient, string message)
+   //     {
+   //         Console.WriteLine($"🔔 Push notification to {recipient}: {message}");
+   //     }
+   // }
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -96,18 +127,28 @@ namespace Assignment_05_OOP
             #endregion
 
             #region Implement Q2
-           // IAuthenticationService authService = new BasicAuthenticationService();
-           //
-           // string username = "alice";
-           // string password = "12345";
-           // string role = "admin";
-           //
-           // bool isAuthenticated = authService.AuthenticateUser(username, password);
-           // bool isAuthorized = authService.AuthorizeUser(username, role);
-           //
-           // Console.WriteLine($"Authenticated: {isAuthenticated}");
-           // Console.WriteLine($"Authorized as '{role}': {isAuthorized}");
+            // IAuthenticationService authService = new BasicAuthenticationService();
+            //
+            // string username = "alice";
+            // string password = "12345";
+            // string role = "admin";
+            //
+            // bool isAuthenticated = authService.AuthenticateUser(username, password);
+            // bool isAuthorized = authService.AuthorizeUser(username, role);
+            //
+            // Console.WriteLine($"Authenticated: {isAuthenticated}");
+            // Console.WriteLine($"Authorized as '{role}': {isAuthorized}");
 
+            #endregion
+
+      #region Implement Q2
+     // INotificationService emailService = new EmailNotificationService();
+     // INotificationService smsService = new SmsNotificationService();
+     // INotificationService pushService = new PushNotificationService();
+     //
+     //emailService.SendNotification("Hassan@example.com", "Hello Hassan !");
+     //smsService.SendNotification("01023500854", "Your balance has been deducted");
+     //pushService.SendNotification("hassan_18122022", "You have a new Notification!");
             #endregion
         }
     }
